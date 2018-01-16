@@ -19,7 +19,7 @@ public class DateOutOfRangeException extends java.lang.Exception {
      * @param msg the detail message.
      */
     public DateOutOfRangeException(String msg) {
-        super(msg);
+        super("Exception in thread \"main\" calendar.InvalidTime: Data in military time. File could not be saved. \n\tat calendar.Appt.setStartHour(Appt.java:134)");
     }
 }
 
