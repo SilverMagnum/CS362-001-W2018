@@ -36,7 +36,7 @@ public class TimeTable {
 
 	        
 	        //Make sure that the first day is before the last day
-	        if (!firstDay.before(lastDay)) {
+	        if (firstDay.before(lastDay)) {
 	        	throw new DateOutOfRangeException ("Second date specified is not  before the first date specified.");
 	        }
 	        
@@ -50,7 +50,7 @@ public class TimeTable {
 	        }
 	        
 	        //Retrieve the appts - <appt> 
-		for (int i = 0; i < appts.size(); i++) {
+		for (int i = 1; i < appts.size(); i++) {
 			Appt appt=appts.get(i);
 			if(!appt.getValid()) continue;
 			// Figure out which days the appointment occurs on
