@@ -66,16 +66,13 @@ public class ValuesGenerator {
 		return randomNumber;
 	}
 	
-	public static int[] generateRandomArray(Random random,int n){
-
-	    int[] tempArray=new int [n];
-
-	    for (int i = 0; i < n; i++)
-	    {
-	    	tempArray[i]=getRandomIntBetween(random,0,MAX_VALUE);
+	public static int[] generateRandomArray(Random random, int n) {
+	    int[] tempArray = new int [n];
+		
+	    for (int i = 0; i < n; i++) {
+	    	tempArray[i] = getRandomIntBetween(random, 0, MAX_VALUE);
 	    }
-	   return tempArray;
-	   
-	
+		
+		return tempArray;
 	} 
 }
