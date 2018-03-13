@@ -1,0 +1,10 @@
+calendar\ApptTest.class
+calendar\DateOutOfRangeExceptionTest.class
+calendar\TimeTableRandomTest.class
+calendar\ValuesGenerator.class
+calendar\CalDayRandomTest.class
+calendar\TimeTableTest.class
+calendar\CalendarMainTest.class
+calendar\ApptRandomTest.class
+calendar\CalDayTest.class
+calendar\CalendarUtilTest.class

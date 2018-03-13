@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
-Test set: calendar.CalDayTest
+Test set: calendar.ApptRandomTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE!
-test01(calendar.CalDayTest)  Time elapsed: 0 sec  <<< FAILURE!
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at calendar.CalDayTest.test01(CalDayTest.java:21)
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.989 sec <<< FAILURE!
+randomTest02(calendar.ApptRandomTest)  Time elapsed: 0.848 sec  <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at calendar.CalendarUtil.NumDaysInMonth(CalendarUtil.java:30)
+	at calendar.Appt.isValid(Appt.java:113)
+	at calendar.Appt.<init>(Appt.java:104)
+	at calendar.ApptRandomTest.randomTest02(ApptRandomTest.java:125)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

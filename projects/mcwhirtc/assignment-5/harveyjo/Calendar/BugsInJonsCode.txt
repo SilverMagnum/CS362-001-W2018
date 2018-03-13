@@ -1,0 +1,20 @@
+Bug 1, 4, 6:
+There's an out of bounds exception in Appt.java. This occured in the line
+where days in month was called. The call is
+(CalendarUtil.NumDaysInMonth(startYear,startMonth-1)).
+
+Bug 2:
+There appears to be an error with appt.getStartYear() not returning the
+year given in the construction call.
+
+Bug 3:
+An error occurred where the description text did not match the returned
+string from appt.toString() did not match the input string into the
+constructer.
+
+Bug 5:
+calDay.isValid() returns false when given a valid day.
+
+Bug 7:
+timeTable.permute(LinkedList<Appt>, int[]) has an error of some kind.
+("Illegal Argument Exception").
